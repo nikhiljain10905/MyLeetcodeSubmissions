@@ -31,7 +31,7 @@ public:
             int pw=(int)log2(k);
             node=ST[node][pw];
             ans=node;
-            k-=pow(2,pw);
+            k-=(1<<pw);
         }
         if(k==1 && node!=-1){
             ans=ST[node][0];
